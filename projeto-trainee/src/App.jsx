@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import Login from './pages/Login'
 import Registro from './pages/Registro'
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path='/' element={<Navigate to='/login' />} />
         <Route path='/login' element={<Login />}/>
         <Route path='/registro' element={<Registro />}/>
       </Routes>
