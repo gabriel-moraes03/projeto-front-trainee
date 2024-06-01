@@ -2,6 +2,7 @@ import React from 'react'
 import logoRoxa from '../assets/logo-roxa.png'
 import InputLogin from '../components/InputLogin'
 import { Link } from 'react-router-dom';
+import './Login.css'
 
 function Login() {
   return (
@@ -10,7 +11,7 @@ function Login() {
             <img src={logoRoxa} alt="logo-emakers-roxa" />
             <h1>Entre em sua conta</h1>
             <InputLogin/>
-            <Link to="/userPage" className='buttonEntrar'>Entrar</Link>
+            <Link to="/user-page" className='buttonEntrar'>Entrar</Link>
         </div>
 
         <div className="divPurple-login">
