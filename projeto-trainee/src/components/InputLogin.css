@@ -1,6 +1,7 @@
 form{
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 label{
@@ -17,5 +18,19 @@ input{
 }
 
 input:nth-child(2){
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:48rem){
+    form{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+        height: 65px;
+    }
+
+    label{
+        font-size: 1.25rem;
+    }
 }

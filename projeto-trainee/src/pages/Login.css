@@ -10,6 +10,18 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.container-white{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    position: relative;
 }
 
 .divWhite-login{
@@ -17,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     box-sizing: border-box;
     padding-bottom: 20px;
 }
@@ -44,6 +56,7 @@
     font-size: 2rem;
     text-align: center;
     margin: 0;
+    font-weight: 400;
 }
 
 .divPurple-login h1{
@@ -56,6 +69,7 @@
     background-image: url(../assets/logo-roxa.png);
     background-position: 50% 48%;
     background-size: 180%;
+    margin:auto;
 }
 
 .divWhite-login h1{
@@ -95,4 +109,54 @@
 .buttonRegistrar1:hover, .buttonRegistrar1:focus{
     background-color: var(--laranja-hover);
     transform: scale(1.05);
+}
+
+@media screen and (min-width:48rem){
+    .login{
+        flex-direction: row;
+    }
+
+    .div-logo-roxa{
+        margin:0;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .container-white{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+
+    .divWhite-login{
+        flex-grow: 1;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    .divWhite-login h1{
+        margin: 50px 0 0 0;
+        width: 428px;
+        font-size: 3rem;
+    }
+
+    .divPurple-login{
+        border-top:none;
+        border-left: 2px solid var(--laranja-padrao);
+        justify-content: space-evenly;
+    }
+        
+    .divPurple-login h1{
+        font-size: 3rem;
+    }
+    .divPurple-login h2{
+        font-size: 3rem;
+        width: 26rem;
+    }
+
+    .buttonRegistrar1, .buttonEntrar{
+        font-size: 20px;
+        padding: 15px 100px;
+    }
 }

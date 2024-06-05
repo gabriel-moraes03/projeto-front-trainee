@@ -7,12 +7,15 @@ import './Login.css'
 function Login() {
   return (
     <div className='login'>
-        <div className='divWhite-login'>
-            <div className="div-logo-roxa"></div>
-            <h1>Entre em sua conta</h1>
-            <InputLogin/>
-            <Link to="/user-page" className='buttonEntrar'>Entrar</Link>
+        <div className="container-white">
+          <div className="div-logo-roxa"></div>
+          <div className='divWhite-login'>
+              <h1>Entre em sua conta</h1>
+              <InputLogin/>
+              <Link to="/user-page" className='buttonEntrar'>Entrar</Link>
+          </div>          
         </div>
+
 
         <div className="divPurple-login">
             <h1>Novo Aqui?</h1>
