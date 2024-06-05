@@ -1,0 +1,58 @@
+.form-registro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-registro label{
+    color: #5E2075;
+    margin-top: 1rem;
+}
+
+.form-registro label:nth-child(1){
+    margin-top: 0;
+}
+
+.form-registro input{
+    width: 100%;
+    height: 30px;
+    background-color: #efefef;
+    border:none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .25);
+    margin: 0 0 1rem 0;
+}
+
+.form-registro select{
+    width: 100%;
+    height: 30px;
+    background-color: #efefef;
+    border:none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .25);
+    margin: 0 0 1rem 0;
+}
+
+.botao-registrar{
+    margin: 1rem 0;
+    align-self: center;
+    width: 150px;
+    border: none;
+    padding: .5rem 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .25);
+    color: white;
+    text-decoration: none;
+    background-color: var(--roxo-padrao);
+    transition-property: background-color, transform;
+    transition-duration: .3s;
+}
+
+#imagem{
+    color:#5E2075;
+}
+
+.botao-registrar:hover, .botao-registrar:focus{
+    background-color: var(--roxo-hover);
+    transform: scale(1.05);
+}

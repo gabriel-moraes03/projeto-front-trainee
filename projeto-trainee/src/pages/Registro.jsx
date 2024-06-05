@@ -1,13 +1,13 @@
 import React from 'react'
-import logoBranca from '../assets/logo-branca.png'
 import InputRegistro from '../components/InputRegistro'
-import { Link } from 'react-router-dom';
+import './Registro.css'
+import LoginRedirect from '../components/LoginRedirect';
 
 function Registro() {
   return (
     <div className='registro'>
         <div className="divPurple-registro">
-            <img src={logoBranca} alt="logo-emakers-branca" />
+            <div className="logo-emakers-branca"></div>
             <h2 className="hero-registro">Venha fazer parte da maior rede social também!</h2>
         </div>
 
@@ -15,10 +15,7 @@ function Registro() {
           <h1>Registrar</h1>
           <InputRegistro/>
 
-          <p>Já poossui uma conta?</p>
-          <p>Clique no botão abaixo para fazer login!</p>
-
-          <Link to="/login" className='buttonLogin1'>Login</Link>
+          <LoginRedirect/>
         </div>
     </div>
   )

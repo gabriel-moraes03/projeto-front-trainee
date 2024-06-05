@@ -1,0 +1,12 @@
+.link-login{
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    color: #5E2075;
+    text-decoration: none;
+}
+
+.link-login:hover, .link-login:focus{
+    text-decoration: underline;
+}

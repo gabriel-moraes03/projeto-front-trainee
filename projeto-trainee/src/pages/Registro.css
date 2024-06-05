@@ -1,0 +1,48 @@
+:root{
+    --roxo-padrao: #5E2075;
+    --roxo-hover: #4c1d5d;
+    --laranja-padrao: #FE690E;
+    --laranja-hover:#c54708;
+}
+
+.registro{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.divPurple-registro{
+    height: 40%;
+    background-image: linear-gradient(var(--roxo-padrao) 50%, var(--laranja-padrao));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPurple-registro h2{
+    display: none;
+}
+
+.logo-emakers-branca{
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/logo-branca.png);
+    background-position:center;
+    background-size: 150%;
+}
+
+.divWhite-registro{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--roxo-padrao)
+}
