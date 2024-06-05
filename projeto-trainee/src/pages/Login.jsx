@@ -8,7 +8,7 @@ function Login() {
   return (
     <div className='login'>
         <div className='divWhite-login'>
-            <img src={logoRoxa} alt="logo-emakers-roxa" />
+            <div className="div-logo-roxa"></div>
             <h1>Entre em sua conta</h1>
             <InputLogin/>
             <Link to="/user-page" className='buttonEntrar'>Entrar</Link>
