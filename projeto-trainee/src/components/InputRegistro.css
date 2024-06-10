@@ -7,6 +7,7 @@
 .form-registro label{
     color: #5E2075;
     margin-top: 1rem;
+    padding-left: 5px;
 }
 
 .form-registro label:nth-child(1){
@@ -21,6 +22,12 @@
     border-radius: 50px;
     box-shadow: 0px 4px 4px rgb(0, 0, 0, .25);
     margin: 0 0 1rem 0;
+    padding: 5px;
+    color: #5E2075;
+}
+
+.form-registro input:focus, .form-registro select:focus{
+    outline: 2px solid #5E2075;
 }
 
 .form-registro select{
@@ -31,6 +38,8 @@
     border-radius: 50px;
     box-shadow: 0px 4px 4px rgb(0, 0, 0, .25);
     margin: 0 0 1rem 0;
+    padding: 5px;
+    color:#5E2075;
 }
 
 .botao-registrar{
@@ -48,11 +57,51 @@
     transition-duration: .3s;
 }
 
+.input-img-container, .container-selection{
+    margin-top: 16px;
+}
+
 #imagem{
     color:#5E2075;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .botao-registrar:hover, .botao-registrar:focus{
     background-color: var(--roxo-hover);
     transform: scale(1.05);
+}
+
+@media screen and (min-width: 48rem) {
+    .botao-registrar{
+        width: 80%;
+        padding: 10px 10px;
+    }
+    
+}
+
+@media screen and (min-width:65rem){
+    .form-registro{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #sexo, #imagem{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .container-selection{
+        margin-right: 10px;
+    }
+
+    .input-img-container, .container-selection{
+        width: calc(50% - 5px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao-registrar{
+        margin: auto;
+    }
 }

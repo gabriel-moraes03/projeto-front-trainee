@@ -71,12 +71,13 @@ h1{
 
     .logo-emakers-branca{
         height: 100%;
-        background-size: 200%;
+        background-size: 150%;
         background-position: 53% 50%;
     }
 
     .divWhite-registro{
         width: 37.5%;
+        padding: 0;
     }
 
     .divWhite-registro h1{

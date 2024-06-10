@@ -16,15 +16,20 @@ function InputRegistro() {
         <label htmlFor="confirmar-senha" className='label-registro'>Confirmar Senha</label>
         <input type="password" id="confirmar-senha" className='input-registro'/>
 
-        <label htmlFor="sexo" className='label-registro'>Sexo</label>
-        <select id="sexo">
-            <option value=""></option>
-            <option value="masc">Masculino</option>
-            <option value="fem">Feminino</option>
-        </select>
+        <div className="container-selection">
+          <label htmlFor="sexo" className='label-registro'>Sexo</label>
+          <select id="sexo">
+              <option value=""></option>
+              <option value="masc">Masculino</option>
+              <option value="fem">Feminino</option>
+          </select>          
+        </div>
 
-        <label htmlFor="imagem" className='label-registro'>Imagem</label>
-        <input type="button" id='imagem' value="Escolha sua imagem" className='input-registro'/>
+        <div className="input-img-container">
+          <label htmlFor="imagem" className='label-registro'>Imagem</label>
+          <input type="button" id='imagem' value="Selecionar imagem" className='input-registro'/>          
+        </div>
+
 
         <button className='botao-registrar'>Registrar-se</button>
 
