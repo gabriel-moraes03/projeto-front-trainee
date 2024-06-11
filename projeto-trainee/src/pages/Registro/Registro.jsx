@@ -1,7 +1,7 @@
 import React from 'react'
-import InputRegistro from '../components/InputRegistro'
+import InputRegistro from '../../components/Input Registro/InputRegistro'
 import './Registro.css'
-import LoginRedirect from '../components/LoginRedirect';
+import LoginRedirect from '../../components/Login Redirect/LoginRedirect';
 
 function Registro() {
   return (

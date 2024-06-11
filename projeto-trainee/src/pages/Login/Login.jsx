@@ -1,6 +1,5 @@
 import React from 'react'
-import logoRoxa from '../assets/logo-roxa.png'
-import InputLogin from '../components/InputLogin'
+import InputLogin from '../../components/Input Login/InputLogin'
 import { Link } from 'react-router-dom';
 import './Login.css'
 

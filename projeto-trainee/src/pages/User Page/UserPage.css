@@ -1,0 +1,11 @@
+.header{
+    width: 100vw;
+    height: 56vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav{
+    display: none;
+}

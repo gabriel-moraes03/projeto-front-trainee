@@ -72,6 +72,10 @@
     transform: scale(1.05);
 }
 
+#imagem, #sexo{
+    height: 40px;
+}
+
 @media screen and (min-width: 48rem) {
     .botao-registrar{
         width: 80%;

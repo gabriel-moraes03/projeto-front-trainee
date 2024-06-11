@@ -1,0 +1,9 @@
+.sidebar  p{
+    color: red;
+    display: none;
+}
+
+.sidebar.open p{
+    display: block;
+}
+
