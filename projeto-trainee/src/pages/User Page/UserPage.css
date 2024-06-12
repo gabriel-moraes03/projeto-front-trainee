@@ -1,11 +1,141 @@
 .header{
     width: 100vw;
     height: 56vh;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
 }
 
 .header-nav{
     display: none;
+}
+
+.header-topo{
+    height: 50%;
+    width: 100%;
+    background-image: url(../../assets/capa-perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position:center;
+    border-bottom: 3px solid #FE690E;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.logo-branca-2{
+    width: 45%;
+    height: 45%;
+    background-image: url(../../assets/logo-branca-horizontal.png);
+    background-position: center;
+    background-size: 200%;
+    margin-left: 2%;
+}
+
+.editar-capa{
+    display: none;
+}
+
+.sidebar-botao{
+    background-color: transparent;
+    border: none;
+    margin-top: 5%;
+    margin-right: 2%;
+}
+
+.sidebar-botao:hover{
+    cursor: pointer;
+}
+
+.perfil{
+    width: fit-content;
+    position: relative;
+    top: -23%;
+}
+
+.informacoes-perfil{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos-user{
+    text-align: center;
+}
+
+.foto-perfil{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   border: 1px solid #FE690E
+
+}
+
+.editar-foto{
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: -30px;
+    top: -30px;
+    background-color: #fefefe;
+    border:none;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .25);
+    border-radius: 50%;
+}
+
+.feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-feed{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, .25);
+}
+
+.infos-user{
+    position: relative;
+    top: -25%;
+}
+
+.infos-user h1{
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.infos-user p{
+    text-align: center;
+    color: #1e1e1e;
+    font-weight: 300;
+}
+
+.borda-inferior{
+    width: 80% ;
+    height: 1px;
+    background-color: #FE690E;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px){
+    .logo-branca-2{
+        background-size: 180%;
+        margin: 0;
+        width: 35%;
+    }
+
+    .sidebar-botao{
+        display: none;
+    }
+
+    .header-nav{
+        display: block;
+    }
 }

@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
+import {FaSignOutAlt, FaUserFriends, FaSearch, FaBars, FaPencilAlt} from 'react-icons/fa';
 import logoBranca2 from '../../assets/logo-branca-horizontal.png'
-import iconeEditar from '../../assets/icone-editar.png'
-import iconePesquisa from '../../assets/icone-pesquisa.png'
-import iconeAmigos from '../../assets/icone2.png'
-import iconeMenu from '../../assets/icone-menu-lateral.png'
 import Sidebar from '../../components/Sidebar/SideBar';
 import './UserPage.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,30 +18,31 @@ const UserPage = ({user}) => {
         <div className='userPage'>
             <header className='header'>
                 <div className='header-topo'>
-                    <img src={logoBranca2} alt="logo emakers branca" className='logo-branca-2' />
+                    <div className='logo-branca-2'> </div> 
 
-                    <button onClick={toggleSidebar} className='sidebar-open'><img src={iconeMenu}/></button>
+                    <button onClick={toggleSidebar} className='sidebar-botao'><FaBars style={{ width: '50px', height: '50px', color:'white' }}/></button>
                     <nav className="header-nav">
-                        <button><img src={iconePesquisa} alt="icone que representa pesquisa" /></button>
-                        <button><img src={iconeAmigos} alt="icone que representa amigos" /></button>
-                        <button><img src={user.profilePicture} alt="foto de perfil do usuário" /></button>
+                        <button><FaSearch/></button>
+                        <button><FaUserFriends/></button>
+                        <button className='botao-foto'></button>
+                        <Link to="/login"><FaSignOutAlt style={{marginRight:'5px'}}/>Sair</Link>
                     </nav>
 
-                    <button className="editar-capa"><img src={iconeEditar} alt="icone editar capa" /></button>
+                    <button className="editar-capa"><FaPencilAlt/></button>
                     
                 </div>
 
                 <div className='informacoes-perfil'>
-                    <div className="botao-foto">
+                    <div className="perfil">
                         <img src={user.profilePicture} alt="foto de perfil do usuario" className="foto-perfil" />
-                        <button><img src={iconeEditar} alt="icone que representa edição" /></button>
+                        <button className='editar-foto'><FaPencilAlt style={{ width: '21px', height: '21px'}}/></button>
                     </div>
                     
                     <div className="infos-user">
                         <h1>{user.nome}, {user.idade}</h1>
                         <p>{user.bio}</p>
+                        <div className='borda-inferior'></div>
                     </div>
-                    <h1></h1>
                 </div>
             </header>
 
