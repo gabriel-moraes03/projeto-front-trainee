@@ -22,16 +22,18 @@ const UserPage = ({user}) => {
 
                     <button onClick={toggleSidebar} className='sidebar-botao'><FaBars style={{ width: '50px', height: '50px', color:'white' }}/></button>
                     <nav className="header-nav">
-                        <button><FaSearch/></button>
-                        <button><FaUserFriends/></button>
+                        <button><FaSearch style={{ width: '27px', height: '27px'}}/></button>
+                        <button><FaUserFriends style={{ width: '27px', height: '27px'}}/></button>
                         <button className='botao-foto'></button>
-                        <Link to="/login"><FaSignOutAlt style={{marginRight:'5px'}}/>Sair</Link>
+                        <Link to="/login" className='botao-logout'><FaSignOutAlt style={{ width: '27px', height: '27px', transform: 'translateY(5px)'}}/></Link>
                     </nav>
 
-                    <button className="editar-capa"><FaPencilAlt/></button>
+                   
                     
                 </div>
-
+                
+                <button className="editar-capa"><FaPencilAlt style={{ width: '25px', height: '25px'}}/></button>
+                
                 <div className='informacoes-perfil'>
                     <div className="perfil">
                         <img src={user.profilePicture} alt="foto de perfil do usuario" className="foto-perfil" />
@@ -41,9 +43,11 @@ const UserPage = ({user}) => {
                     <div className="infos-user">
                         <h1>{user.nome}, {user.idade}</h1>
                         <p>{user.bio}</p>
-                        <div className='borda-inferior'></div>
                     </div>
                 </div>
+
+                <div className='borda-inferior'></div>
+
             </header>
 
             <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />

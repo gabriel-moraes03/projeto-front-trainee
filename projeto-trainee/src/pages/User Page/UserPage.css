@@ -83,6 +83,7 @@
     border:none;
     box-shadow: 0px 4px 4px rgb(0, 0, 0, .25);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .feed{
@@ -124,6 +125,18 @@
     margin: auto;
 }
 
+@media screen and (max-height: 585px){
+    .feed{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-height: 585px) and (max-height: 690px){
+    .feed{
+        margin-top: 20px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .logo-branca-2{
         background-size: 180%;
@@ -138,4 +151,137 @@
     .header-nav{
         display: block;
     }
+
+    .header-topo{
+        height: 26vh;
+        background-size: 100%;
+        border-bottom: 4px solid #FE690E;
+    }
+
+    .borda-inferior{
+        height: 4px;
+        width: 92%;
+        margin: auto;
+    }
+
+    .informacoes-perfil{
+        margin-left: 5%;
+        flex-direction: row;
+    }
+
+    .infos-user{
+        margin-left: 2rem;
+        margin-top: 6rem;
+    }
+
+    .infos-user h1, .infos-user p{
+        text-align: left;
+    }
+
+    .infos-user h1{
+        font-size: 3rem;
+    }
+
+    .infos-user p{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+
+    .foto-perfil{
+        width: 275px;
+        height: 275px;
+        border-radius: 50%;
+        transform: translateY(-15%);
+     }
+
+     .feed{
+        flex-direction: row;
+        margin: 2% auto 0 auto;
+        width: 90%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     }
+
+     .foto-feed{
+        width: 320px;
+        height: 320px;
+     }
+
+     .editar-foto{
+        transform: translateX(230px) translateY(-180%);
+     }
+
+     .logo-branca-2{
+        width: 30%;
+        height: 50%;
+        background-position: center;
+        background-size: 150%;
+        margin-top: 1%;
+        transform: translateX(-30px) translateY(-10px);
+    }
+
+    .header-nav{
+        display: flex;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .header-nav button, .botao-logout{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: none;
+        margin-right: 20px;
+        background-color: #fefefe;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .botao-foto{
+        background-image: url(../../assets/foto-perfil.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header-nav button, .botao-foto{
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }  
+
+    .header-nav button:hover, .header-nav button:focus, .botao-foto:hover, .botao-foto:focus{
+        transform: scale(1.1);
+    }
+    
+    .botao-logout{
+        transition-duration: 0.3s;
+        transition-property: transform background-color;
+    }  
+
+    .botao-logout:hover, .botao-logout:focus{
+        transform: scale(1.1);
+        background-color: rgb(175, 1, 1);
+    }
+
+    .editar-capa{
+        cursor: pointer;
+        display: initial;
+        width: 40px;
+        height: 40px;
+        background-color: #fefefe;
+        border:none;
+        box-shadow: 0 4px 4px rgb(0, 0, 0, .25);
+        border-radius: 100px;
+        position: absolute;
+        right: 30px;
+        top: calc(26vh - 20px);
+        transition-property: transform;
+        transition-duration: 0.3s;
+        z-index: 4; 
+    }
+
+    .editar-capa:hover, .editar-capa:focus{
+        transform:scale(1.1);
+    }
+
 }
