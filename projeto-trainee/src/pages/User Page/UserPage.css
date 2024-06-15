@@ -298,3 +298,10 @@
         transform: translateX(-15px) translateY(-180%);
      }
 }
+
+@media screen and (min-width: 2410px){
+    .logo-branca-2{
+        background-size: 100%;
+        transform: translateX(-20%);
+    }
+}
