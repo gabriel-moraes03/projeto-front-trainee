@@ -123,20 +123,20 @@ html, body {
 }
 
 
-@media screen and (min-width:48rem) and (max-height:35rem){
+@media screen and (min-width:902px) and (max-height:35rem){
     .div-logo-roxa{
         height: 80px;
     }
 }
 
-@media screen and (min-width:48rem) and (max-height:29.75rem){
+@media screen and (min-width:902px) and (max-height:29.75rem){
     .div-logo-roxa{
         height: 60px;
         width: 180px;
     }
 }
 
-@media screen and (min-width:48rem){
+@media screen and (min-width:902px){
     .divPurple-login{
         height: 100vh;
     }

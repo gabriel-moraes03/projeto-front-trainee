@@ -62,6 +62,7 @@
 
 .infos-user{
     text-align: center;
+    max-height: 120%;
 }
 
 .foto-perfil{
@@ -125,6 +126,12 @@
     margin: auto;
 }
 
+@media screen and (max-width: 768px) and (max-height: 745px){
+    .borda-inferior{
+        margin-top: 5%;
+    }
+}
+
 @media screen and (max-height: 585px){
     .feed{
         margin-top: 60px;
@@ -183,7 +190,7 @@
     }
 
     .infos-user p{
-        width: 40%;
+        min-width: 40%;
         font-size: 1.5rem;
     }
 
@@ -284,4 +291,10 @@
         transform:scale(1.1);
     }
 
+}
+
+@media screen and (min-width:2004px){
+    .editar-foto{
+        transform: translateX(-15px) translateY(-180%);
+     }
 }
