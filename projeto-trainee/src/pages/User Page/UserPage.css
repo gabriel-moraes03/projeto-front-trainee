@@ -186,12 +186,12 @@
     }
 
     .infos-user h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .infos-user p{
         min-width: 40%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .foto-perfil{
@@ -293,13 +293,13 @@
 
 }
 
-@media screen and (min-width:2004px){
+@media screen and (min-width:1674px){
     .editar-foto{
         transform: translateX(-15px) translateY(-180%);
      }
 }
 
-@media screen and (min-width: 2410px){
+@media screen and (min-width: 1800px){
     .logo-branca-2{
         background-size: 100%;
         transform: translateX(-20%);
